@@ -78,6 +78,8 @@ git commit -m "Describe your changes"
 git push origin feature-branch
 ```
 4. Open a Pull Request from your forked repository to the original repository.
+   
+⭐ If you like this project, make sure to star the repo!
 
 ✨ Happy Coding! 🚀
 
