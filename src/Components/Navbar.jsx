@@ -25,8 +25,8 @@ const Navbar = () => {
           <div className="flex items-center gap-2">
             <div className="w-8 h-8 overflow-hidden">
               <img
-                src="https://s3-alpha-sig.figma.com/img/cf24/74b1/2bcf5e926f88e42eeab0f8c1c9bca44b?Expires=1739145600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=TDYL1uRRoYKjlZlkQXyeUbA4EnjV4GzlaUyNY5ruW0um7zKar9G5WveXFSG8l8cDclLhpsgmM61gGultVuQeEtce3Z5BgQR-T263JC7xoNGY1seQVpCllEGitvnXkPckxhu4DL6VHDzZvH6BpzpdHSmLfgSzI~QDsSNih2AIGjPIRymUZfm2mMjiq2mO58hwU-M8-TDPDqRFuxi4HrMMeA5Lxz~AwzeTBe9J55OwH7HL-MtsGMO6FE1jg8h3B74ZJ4IKVzx2xYdxgLd1ZLWtHEn0apfbXMz~fut08wYMXcfNl4tb~Enl7XMs8wIG1agOmhR1PfjwGcmYU9JS~gBVVQ__"
-                alt="User Avatar"
+                src="./assets/img2.avif"
+                 alt="User Avatar"
                 className="object-cover object-center w-full h-full"
               />
             </div>

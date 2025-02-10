@@ -71,8 +71,8 @@ const Home = () => {
             <h2 className="text-lg font-semibold mb-4">NFT Marketplace</h2>
             <div className="relative duration-300 ease-in-out transition hover:scale-110 rounded-xl overflow-hidden">
               <img
-                src="https://s3-alpha-sig.figma.com/img/c18b/767a/d391760894f2549b25d00936209b7ec5?Expires=1739145600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=bIr1t-qNuixJgEfUsZuGkucNrt4-ccClWCsQMDqEPpYSxIs-5Zq4tTtk6TPmZxpAU6KzxnCadNIHjp5d3oc8JOfLpQe6YWuthFT5khacMHKM2Jte-s5q-P--8Y~sDif1B9cWbcpHgg8oI5MdfcWu0BXknGcHwUfp-p4z7CgvKKlyMz-ACHN3Bnaxju-L5VH455cGPJH1ykI6S9Eo6di7yuVq1BPWSQ48EYhkVbC9-0wxNUlhMFAZ9Cvk67pUDhPN~2UxPIxf6fUhzQWWUBzKdX21R6Qj4nPGu7kuFvIbnJvFcIlbts9SV1M5pud5AghvGVYZgGsbYmLTEQ5afDrD7A__"
-                alt="House Andromeda"
+                src="./assets/img3.avif"
+                 alt="House Andromeda"
                 className="w-full h-48 object-cover"
               />
               <div className="absolute top-4 left-4 flex gap-2">
