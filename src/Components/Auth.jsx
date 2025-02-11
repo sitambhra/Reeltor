@@ -1,6 +1,6 @@
-import { SignedIn, SignIn, SignUp, useAuth } from "@clerk/clerk-react";
-import React, { useEffect } from "react";
-import { redirect, useNavigate } from "react-router-dom";
+import { SignIn, SignUp, useAuth } from "@clerk/clerk-react";
+import { useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 
 const Auth = ({ mode }) => {
   const isSignedIn = useAuth();
