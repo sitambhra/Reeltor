@@ -8,22 +8,34 @@ import Clock from "./Pages/Clock";
 import Wallet from "./Pages/Wallet";
 import Calendar from "./Pages/Calendar";
 import Settings from "./Pages/Settings";
+import { SignedIn, SignedOut } from "@clerk/clerk-react";
+import Auth from "./Components/Auth";
 function App() {
   return (
     <>
       <Router>
-        <Navbar />
-        <Sidebar />
+        <SignedIn>
+          <Navbar />
+          <Sidebar />
 
-        <Routes>
-          <Route path="/" element={<Home />}></Route>
-          <Route path="/home" element={<Home />}></Route>
-          <Route path="/discover" element={<Discover />}></Route>
-          <Route path="/clock" element={<Clock />}></Route>
-          <Route path="/wallet" element={<Wallet />}></Route>
-          <Route path="/calendar" element={<Calendar />}></Route>
-          <Route path="/settings" element={<Settings />}></Route>
-        </Routes>
+          <Routes>
+            <Route path="/" element={<Home />}></Route>
+            <Route path="/home" element={<Home />}></Route>
+            <Route path="/discover" element={<Discover />}></Route>
+            <Route path="/clock" element={<Clock />}></Route>
+            <Route path="/wallet" element={<Wallet />}></Route>
+            <Route path="/calendar" element={<Calendar />}></Route>
+            <Route path="/settings" element={<Settings />}></Route>
+          </Routes>
+        </SignedIn>
+
+        <SignedOut>
+          <Routes>
+            <Route path="/sign-in" element={<Auth mode="sign-in" />} />
+            <Route path="/sign-up" element={<Auth mode="sign-up" />} />
+            <Route path="*" element={<Auth mode="sign-in" />} />
+          </Routes>
+        </SignedOut>
       </Router>
     </>
   );
