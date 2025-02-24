@@ -120,7 +120,9 @@ function PropertyCard({ property }) {
     <div
       className={` bg-${
         theme === 'dark' ? '[#373739]' : ''
-      } rounded-lg cursor-pointer hover:scale-110 transition ease-in-out overflow-hidden shadow-sm`}
+      } rounded-lg cursor-pointer hover:scale-110 transition ease-in-out overflow-hidden shadow-sm ${
+        theme === 'dark' ? 'shadow-amber-50' : ''
+      }`}
     >
       <div className='relative '>
         <img
