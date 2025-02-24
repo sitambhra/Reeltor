@@ -7,7 +7,9 @@ export const ThemeContext = React.createContext({
 });
 
 export const ThemeProvider = ({ children }) => {
-  const [theme, setTheme] = React.useState('light');
+  const [theme, setTheme] = React.useState(
+    localStorage.getItem('reeltor-theme') || 'light'
+  );
   const darkTheme = () => setTheme('dark');
   const lightTheme = () => setTheme('light');
 
@@ -17,6 +19,7 @@ export const ThemeProvider = ({ children }) => {
       htmlElement.classList.remove('dark', 'light');
       htmlElement.classList.add(theme);
     }
+    localStorage.setItem('reeltor-theme', theme);
     console.log(theme);
   }, [theme]);
 
