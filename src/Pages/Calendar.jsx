@@ -102,7 +102,7 @@ const Calendar = () => {
   `;
 
   return (
-    <div className={`flex flex-col md:flex-row items-start p-4 space-y-4 md:space-y-0 h-[1000px] ${theme === 'dark' ? 'bg-gray-900 text-white' : 'bg-white text-black'}`}>
+    <div className={`flex flex-col md:flex-row items-start p-4 space-y-4 md:space-y-0 min-h-[640px] max-h-auto ${theme === 'dark' ? 'bg-gray-900 text-white' : 'bg-white text-black'}`}>
       {/* Inject custom style */}
       <style>{calendarStyles}</style>
 
