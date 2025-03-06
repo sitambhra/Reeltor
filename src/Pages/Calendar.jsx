@@ -12,9 +12,7 @@ const Calendar = () => {
   const { theme } = useTheme();
 
   const cryptoEvents = [
-    { date: '2025-03-10', event: 'Bitcoin Halving' },
-    { date: '2025-03-15', event: 'ICO Launch: XYZ Token' },
-    { date: '2025-03-20', event: 'Airdrop Claim Period' },
+     { date: '2025-03-20', event: 'Airdrop Claim Period' },
     { date: '2025-04-08', event: 'Paris Blockchain Week 2025'},
     { date: '2025-04-30', event: 'TOKEN2049 Dubai'}
   ];
