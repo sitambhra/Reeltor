@@ -12,7 +12,7 @@ const Navbar = ({ hasNotification = true }) => {
   return (
     <>
       <nav
-        className={`flex relative justify-between items-center p-4 shadow-md ml-20 ${
+        className={`flex relative justify-between items-center p-4 shadow-md ml-20 h-20 ${
           theme === 'dark' ? 'bg-[#19191a]' : ''
         }`}
       >

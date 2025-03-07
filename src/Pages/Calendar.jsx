@@ -102,14 +102,15 @@ const Calendar = () => {
   `;
 
   return (
-    <div className={`flex flex-col md:flex-row items-start p-4 space-y-4 md:space-y-0 min-h-[640px] max-h-auto ${theme === 'dark' ? 'bg-gray-900 text-white' : 'bg-white text-black'}`}>
+    <div className={`grid grid-cols-2 gap-6 h-[calc(100vh-5rem)] w-[calc(100vw-5rem)] ml-auto box-border ${theme === 'dark' ? 'bg-gray-900 text-white' : 'bg-white text-black'}`}>
+
       {/* Inject custom style */}
-      <style>{calendarStyles}</style>
+      {/* <style>{calendarStyles}</style> */}
 
       {/* Calendar Section */}
-      <div className='md:w-1/2 w-full mt-12'>
-        <h1 className='text-2xl font-bold text-center p-5'>Crypto Calendar</h1>
-        <div className='flex flex-col items-center ml-20 mr-20'>
+      <div className='w-full h-full flex flex-col justify-center items-center gap-4 p-7'>
+        <h1 className='text-2xl font-bold text-center underline underline-offset-2 decoration-1'>Crypto Calendar</h1>
+        <div className='w-full flex flex-col items-center'>
           <CalendarComponent
             onChange={handleDateChange}
             value={date}
@@ -119,7 +120,7 @@ const Calendar = () => {
       </div>
 
       {/* Events Section */}
-      <div className='md:w-1/2 w-full mt-20'>
+      <div className='w-full h-full p-6 overflow-y-auto'>
         <div className='flex flex-col items-center space-y-2'>
           <input
             type='text'
