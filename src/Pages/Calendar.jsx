@@ -105,7 +105,7 @@ const Calendar = () => {
     <div className={`grid grid-cols-2 gap-6 h-[calc(100vh-5rem)] w-[calc(100vw-5rem)] ml-auto box-border ${theme === 'dark' ? 'bg-gray-900 text-white' : 'bg-white text-black'}`}>
 
       {/* Inject custom style */}
-      {/* <style>{calendarStyles}</style> */}
+      <style>{calendarStyles}</style>
 
       {/* Calendar Section */}
       <div className='w-full h-full flex flex-col justify-center items-center gap-4 p-7'>
